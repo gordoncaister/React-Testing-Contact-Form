@@ -21,11 +21,9 @@ test('inputs are correct type', () => {
 
     const { getByLabelText } = render(<ContactForm />);
     
-    
-        const firstName = getByLabelText(/first name/i); 
-        const lastName = getByLabelText(/last Name/i);
         const email = getByLabelText(/email/i);
-        const message = getByLabelText(/message/i);
+        
         
         expect(email).toHaveAttribute("type","email")
+
     });
